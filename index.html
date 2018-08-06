@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href=".resources/css/reset.css" type="text/css">
-    <link rel="stylesheet" href=".resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
     <title>Secret Agent Supply Inc.</title>
   </head>
   <body>
@@ -12,23 +12,27 @@
     <!-- Header Section -->
 
     <header>
-      <img src="./resources/images/logo.png" alt="Secret Agent Supply Logo">
-      <p>SECRET AGENT SUPPLY INC.</p>
+      <div class="container">
+        <img src="./resources/images/logo.png" alt="Secret Agent Supply Logo">
+        <p>SECRET AGENT SUPPLY INC.</p>
+      </div>
     </header>
 
     <!-- Main Banner Section -->
 
-    <div class="#">
-      <div class="#">
-        <p>NEW ARRIVAL</p>
-        <h1>SPORT BIKES AND MOTORCYCLES</h1>
+    <div class="banner">
+      <div class="container">
+        <div class="headline">
+          <p>NEW ARRIVAL</p>
+          <h1>SPORT BIKES AND MOTORCYCLES</h1>
+        </div>
       </div>
     </div>
 
     <!-- Navigation Section -->
 
-    <div class="#">
-      <nav>
+    <div class="navigation">
+      <nav class="container">
         <span>Eyewear</span>
         <span>Apparel</span>
         <span>Gadgets</span>
@@ -40,51 +44,59 @@
 
     <!-- Product Grid Section -->
 
-    <div class="#">
+    <div class="grid">
 
-      <div class="#"> <!-- One -->
-        <img src="./resources/images/pen.png" alt="Image of Exploding Pen">
-        <div class="#">
-          <p>Exploding Pen</p>
-        </div>
-      </div>
+      <div class="container">
 
-      <div class="#"> <!-- Two -->
-        <img src="./resources/images/watch.png" alt="Image of Cellular Watch">
-        <div class="#">
-          <p>Cellular Watch</p>
+        <div class="product good">
+          <img src="./resources/images/pen.png" alt="Image of Exploding Pen">
+          <div class="product-name">
+            <p>Exploding Pen</p>
+          </div>
         </div>
-      </div>
 
-      <div class="#"> <!-- Three -->
-        <img src="./resources/images/glasses.png" alt="Image of Thermal Glasses">
-        <div class="#">
-          <p>Thermal Glasses</p>
+        <div class="product good">
+          <img src="./resources/images/watch.png" alt="Image of Cellular Watch">
+          <div class="product-name">
+            <p>Cellular Watch</p>
+          </div>
         </div>
+
+        <div class="product thermal">
+          <img src="./resources/images/glasses.png" alt="Image of Thermal Glasses">
+          <div class="product-name">
+            <p>Thermal Glasses</p>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
     <!-- Location & Hours Section -->
 
-    <div class="#">
+    <div class="setting">
 
-      <div class="#">
-        <div class="#">
-          <p>Location</p>
-        </div>
-        <div class="#">
-          <p>-47.346436, 84.32354</p>
-        </div>
-      </div>
+      <div class="container">
 
-      <div class="#">
-        <div class="#">
-          <p>Hours</p>
+        <div class="location">
+          <div class="category">
+            <p>Location</p>
+          </div>
+          <div class="details">
+            <p>-47.346436, 84.32354</p>
+          </div>
         </div>
-        <div class="#">
-          <p>0800 - 1800</p>
+
+        <div class="hours">
+          <div class="category">
+            <p>Hours</p>
+          </div>
+          <div class="details">
+            <p>0800 - 1800</p>
+          </div>
         </div>
+
       </div>
 
     </div>
@@ -92,7 +104,9 @@
     <!-- Footer Section -->
 
     <footer>
-      <p>&copy Secret Agent Supply Inc.</p>
+      <div class="container">
+        <p id="footer">&copy Secret Agent Supply Inc.</p>
+      </div>
     </footer>
 
   </body>
