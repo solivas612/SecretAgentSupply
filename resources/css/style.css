@@ -82,13 +82,15 @@ nav {
 
 nav span {
   padding: 0.75rem 0rem;
-
 }
+
 /* Product Grid Section */
 
 .grid .container {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
 }
 
 .product {
@@ -102,18 +104,9 @@ nav span {
   margin-left: auto;
   margin-right: auto;
   width: auto;
-  padding: 2rem 0rem;
-}
-
-.good img {
   height: 9rem;
   padding: 2rem 0rem;
 }
-
-/*.product .thermal img {
-  height: auto;
-  width: 50%*/
-
 
 .product .product-name {
   padding: 0.5rem 0rem;
@@ -142,9 +135,142 @@ nav span {
 footer {
   height: 5rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 #footer {
   text-align: left;
+}
+
+/* Tablet Media Query */
+
+@media only screen and (max-width: 1024px) {
+
+  span {
+    display: none;
+  }
+
+  .navigation .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav:after {
+    content: 'Menu';
+    text-align: center;
+    color: white;
+    padding: 0.75rem 0rem;
+  }
+
+  .product {
+    width: 47%;
+    height: auto;
+  }
+
+  .product.two.three {
+    display: none;
+  }
+
+}
+
+/* Mobile Media Query */
+
+@media only screen and (max-width: 470px) {
+
+  header .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .container img {
+    height: 1.5rem;
+    padding: 0.66rem 0.5rem;
+  }
+
+  header .container p {
+    display: none;
+  }
+
+  .banner {
+    background-image: url("../images/banner.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+  }
+
+  .headline {
+    width: 100%;
+    margin-top: 10rem;
+
+  }
+
+  .headline p {
+    padding: 1rem 0rem 0rem 2rem;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .headline h1 {
+    padding: 0.25rem 0rem 2.01rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  /* Navigation */
+
+  span {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav:after {
+    content: 'Menu';
+    text-align: center;
+    color: white;
+    padding: 0.75rem 0rem;
+  }
+
+  /* Products */
+
+  .grid .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product {
+    width: 90%;
+    height: auto;
+  }
+
+  .product.two {
+    display: none;
+  }
+
+  /* Location and Hours */
+
+  .setting .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .location {
+    min-width: 90%;
+    margin: 3rem 0rem 0rem 0rem;
+  }
+
+  .hours {
+    min-width: 90%;
+    margin: 0.5rem 0rem 3rem 0rem;
+  }
+
+  .category p {
+    padding: 1rem 0rem 1rem 2rem;
+  }
 }
